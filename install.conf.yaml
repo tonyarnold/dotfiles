@@ -24,6 +24,4 @@
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
-    - 
-        command: curl -LSso vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
-        description: Update pathogen.vim
+    - ["curl -LSso vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim", Update pathogen.vim]
