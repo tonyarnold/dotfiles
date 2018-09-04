@@ -5,8 +5,8 @@
 
 - defaults:
     link:
-      create: true
-      relink: true
+        create: true
+        relink: true
 
 - link:
     ~/.config/fish/conf.d: config/fish/conf.d
