@@ -1,0 +1,28 @@
+- clean: 
+    - '~'
+    - ~/.config
+    - ~/.config/fish
+
+- defaults:
+    link:
+      create: true
+      relink: true
+
+- link:
+    ~/.config/fish/config.fish: config/fish/config.fish
+    ~/.config/fish/functions: config/fish/functions
+    ~/.config/git: config/git
+    ~/.config/omf: config/omf
+    ~/.gitconfig: gitconfig
+    ~/.ssh/config: ssh/config
+    ~/.gnupg/gpg-agent.conf: gnupg/gpg-agent.conf
+    ~/.gnupg/gpg.conf: gnupg/gpg.conf
+    ~/.tvnamer.json: tvnamer.json
+    ~/.vim: vim
+    ~/.vimrc: vimrc
+
+- shell:
+    - [git submodule update --init --recursive, Installing submodules]
+    - 
+        command: curl -LSso vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
+        description: Update pathogen.vim

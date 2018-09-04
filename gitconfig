@@ -1,0 +1,107 @@
+[alias]
+	co = checkout
+	br = branch
+	cm = commit
+	st = status
+	unstage = reset HEAD --
+	uncommit = reset --soft HEAD^
+	purge = clean -fd
+	dif = diff
+	pick = cherry-pick
+
+[color]
+	ui = auto
+	branch = auto
+	status = auto
+
+[core]
+	fsyncobjectfiles = true
+	pager = less
+	quotepath = false
+	trustctime = false
+	precomposeunicode = false
+
+	# Xcode Project merging
+	attributesfile = ~/.config/git/attributes
+
+	# You'll want this.
+	excludesfile = ~/.config/git/excludes
+
+[credential]
+	helper = osxkeychain
+
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	required = true
+	process = git-lfs filter-process
+
+[http]
+	# Without this. Git would often have trouble with stupidly large commits (see Twitter for iOS source code).
+	postBuffer = 524288000
+	sslVerify = true
+
+[pack]
+	# Auto detect right number of threads
+	threads = 0
+
+[push]
+	# This is now the default...
+	default = simple
+
+[receive]
+	denyCurrentBranch = updateInstead
+
+[rebase]
+	autoSquash = true
+	autoStash = true
+
+[rerere]
+	# Remember and re-apply your git conflict resolutions. This is magic: https://www.kernel.org/pub/software/scm/git/docs/git-rerere.html
+	enabled = true
+
+[status]
+	# Painfully verbose (but vitally important) info about submodules.
+	submodulesummary = true
+
+[diff]
+	tool = Kaleidoscope
+	compactionHeuristic = true
+	colorMoved = zebra
+
+[difftool]
+	prompt = false
+
+[merge]
+	tool = Kaleidoscope
+	log = true
+
+[merge "mergepbx"]
+        name = Xcode project files merge tool
+        driver = mergepbx %O %A %B
+
+[mergetool "mergepbx"]
+	cmd = mergepbx "$BASE" "$LOCAL" "$REMOTE" -o "$MERGED"
+
+[mergetool]
+	keepBackup = false
+	prompt = false
+
+[mergetool "Kaleidoscope"]
+	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+	trustexitcode = true
+
+[commit]
+	gpgsign = true
+
+[tag]
+	gpgsign = true
+
+[gpg]
+	program = gpg
+
+[pull]
+	rebase = true
+
+[include]
+	path = ~/.gitconfig-local

@@ -1,0 +1,9 @@
+package brew
+package bundler
+package keychain
+package nodenv
+package osx
+package pyenv
+package rbenv
+theme default
+theme pure

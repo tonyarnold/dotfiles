@@ -1,0 +1,21 @@
+Host *
+  AddKeysToAgent yes
+  UseKeychain yes
+  IdentityFile ~/.ssh/id_rsa
+
+Host github.com
+  Compression yes
+  User git
+  Port 22
+  Hostname github.com
+  IdentityFile ~/.ssh/id_rsa
+  TCPKeepAlive yes
+  IdentitiesOnly yes
+
+Host bitbucket.org
+  Compression yes
+  HostName bitbucket.org
+  User hg
+  IdentityFile ~/.ssh/id_rsa
+  TCPKeepAlive yes
+  IdentitiesOnly yes
