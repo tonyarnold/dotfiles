@@ -25,7 +25,7 @@
 	attributesfile = ~/.config/git/attributes
 
 	# You'll want this.
-	excludesfile = ~/.config/git/excludes
+	excludesfile = ~/.config/git/global-excludes
 
 [credential]
 	helper = osxkeychain
@@ -80,9 +80,6 @@
 	name = Xcode project files merge tool
 	driver = mergepbx %O %A %B
 
-[mergetool "mergepbx"]
-	cmd = mergepbx "$BASE" "$LOCAL" "$REMOTE" -o "$MERGED"
-
 [mergetool]
 	keepBackup = false
 	prompt = false
@@ -91,8 +88,12 @@
 	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
 	trustexitcode = true
 
+[mergetool "mergepbx"]
+	cmd = mergepbx "$BASE" "$LOCAL" "$REMOTE" -o "$MERGED"
+
 [commit]
 	gpgsign = true
+	template = ~/.config/git/commit-message-template
 
 [tag]
 	gpgsign = true
