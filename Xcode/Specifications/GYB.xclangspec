@@ -1,0 +1,14 @@
+// GYB
+(
+/****************************************************************************/
+// MARK: Top-Level
+/****************************************************************************/
+    {
+        Identifier = "xcode.lang.gyb";
+        Description = "GYB Coloring";
+        BasedOn = "xcode.lang.swift";
+        IncludeInMenu = YES;
+        UsesCLikeIndentation = YES;
+        Name = "GYB";
+    }
+)

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Kind</key>
+	<string>Xcode.IDEKit.TextSubstitutionFileTemplateKind</string>
+	<key>Description</key>
+	<string>View model and view controller using ReactiveKit</string>
+	<key>Platforms</key>
+	<array>
+		<string>com.apple.platform.macosx</string>
+	</array>
+	<key>MainTemplateFiles</key>
+	<dict>
+		<key>Swift</key>
+		<string>___FILEBASENAME___.swift</string>
+	</dict>
+	<key>AllowedTypes</key>
+	<dict>
+		<key>Swift</key>
+		<array>
+			<string>public.swift-source</string>
+		</array>
+	</dict>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Identifier</key>
+			<string>baseClassName</string>
+			<key>Required</key>
+			<true/>
+			<key>Name</key>
+			<string>Base Class Name:</string>
+			<key>Description</key>
+			<string>The base name of the class to create. Don&apos;t include &quot;ViewController&quot; or &quot;ViewModel&quot; at the end.</string>
+			<key>Type</key>
+			<string>text</string>
+			<key>NotPersisted</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>Identifier</key>
+			<string>viewControllerSubclass</string>
+			<key>Required</key>
+			<true/>
+			<key>Name</key>
+			<string>View controller subclass of:</string>
+			<key>Description</key>
+			<string>What class the view controller inherits from</string>
+			<key>Type</key>
+			<string>class</string>
+			<key>Default</key>
+			<string>NSViewController</string>
+			<key>FallbackHeader</key>
+			<string>#import &lt;Cocoa/Cocoa.h&gt;</string>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<string>___VARIABLE_baseClassName___ViewController</string>
+			<key>Identifier</key>
+			<string>viewControllerName</string>
+			<key>Type</key>
+			<string>static</string>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<string>___VARIABLE_viewControllerName:RFC1034Identifier___</string>
+			<key>Identifier</key>
+			<string>VIEWCONTROLLERFILENAME</string>
+			<key>Type</key>
+			<string>static</string>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<string>___VARIABLE_baseClassName___ViewModel</string>
+			<key>Identifier</key>
+			<string>viewModelName</string>
+			<key>Type</key>
+			<string>static</string>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<string>___VARIABLE_viewModelName:RFC1034Identifier___</string>
+			<key>Identifier</key>
+			<string>VIEWMODELFILENAME</string>
+			<key>Type</key>
+			<string>static</string>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<string>___VARIABLE_VIEWCONTROLLERFILENAME___</string>
+			<key>Identifier</key>
+			<string>productName</string>
+			<key>Type</key>
+			<string>static</string>
+		</dict>
+	</array>
+</dict>
+</plist>

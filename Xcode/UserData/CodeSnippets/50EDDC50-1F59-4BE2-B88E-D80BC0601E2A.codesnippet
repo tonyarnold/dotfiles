@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>namedcolor</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>@objc(iba_&lt;#ColorName#&gt;Color)
+    class var &lt;#ColorName#&gt;Color: NSColor {
+        if #available(macOS 10.13, *) {
+            return NSColor(named: NSColor.Name(rawValue: ""))!
+        } else {
+            return NSColor(srgbRed: )
+        }
+    }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>50EDDC50-1F59-4BE2-B88E-D80BC0601E2A</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>macosx</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Named Asset Color Placeholder</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

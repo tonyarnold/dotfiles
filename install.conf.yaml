@@ -23,6 +23,14 @@
     ~/.tvnamer.json: tvnamer.json
     ~/.vim: vim
     ~/.vimrc: vimrc
+    ~/Library/Developer/Xcode/Plug-ins: Xcode/Plug-ins
+    ~/Library/Developer/Xcode/Specifications: Xcode/Specifications
+    ~/Library/Developer/Xcode/Templates: Xcode/Templates
+    ~/Library/Developer/Xcode/UserData/CodeSnippets: Xcode/UserData/CodeSnippets
+    ~/Library/Developer/Xcode/UserData/FontAndColorThemes: Xcode/UserData/FontAndColorThemes
+    ~/Library/Developer/Xcode/UserData/IDETemplateMacros.plist: Xcode/UserData/IDETemplateMacros.plist
+    ~/Library/Developer/Xcode/UserData/KeyBindings: Xcode/UserData/KeyBindings
+    ~/Library/Developer/Xcode/UserData/xcdebugger: Xcode/UserData/xcdebugger
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
