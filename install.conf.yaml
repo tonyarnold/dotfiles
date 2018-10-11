@@ -1,4 +1,4 @@
-- clean: 
+- clean:
     - '~'
     - ~/.config
     - ~/.config/fish
@@ -33,5 +33,7 @@
     ~/Library/Developer/Xcode/UserData/xcdebugger: Xcode/UserData/xcdebugger
 
 - shell:
+    - chmod 0700 ~/.gnupg
+    - chmod 0700 ~/.ssh
     - [git submodule update --init --recursive, Installing submodules]
     - ["curl -LSso vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim", Update pathogen.vim]
