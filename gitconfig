@@ -91,6 +91,9 @@
 [mergetool "mergepbx"]
 	cmd = mergepbx "$BASE" "$LOCAL" "$REMOTE" -o "$MERGED"
 
+[diff "localizablestrings"]
+	textconv = "iconv -f utf-16 -t utf-8"
+
 [commit]
 	gpgsign = true
 	template = ~/.config/git/commit-message-template
