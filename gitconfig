@@ -1,111 +1,122 @@
 [alias]
-	co = checkout
-	br = branch
-	cm = commit
-	st = status
-	unstage = reset HEAD --
-	uncommit = reset --soft HEAD^
-	purge = clean -fd
-	dif = diff
-	pick = cherry-pick
+  co = checkout
+  br = branch
+  cm = commit
+  st = status
+  unstage = reset HEAD --
+  uncommit = reset --soft HEAD^
+  purge = clean -fd
+  dif = diff
+  pick = cherry-pick
 
 [color]
-	ui = auto
-	branch = auto
-	status = auto
+  ui = auto
+  branch = auto
+  status = auto
 
 [core]
-	fsyncobjectfiles = true
-	pager = less
-	quotepath = false
-	trustctime = false
-	precomposeunicode = false
+  fsyncobjectfiles = true
+  pager = less
+  quotepath = false
+  trustctime = false
+  precomposeunicode = false
 
-	# Xcode Project merging
-	attributesfile = ~/.config/git/attributes
+  # Xcode Project merging
+  attributesfile = ~/.config/git/attributes
 
-	# You'll want this.
-	excludesfile = ~/.config/git/global-excludes
+  # You'll want this.
+  excludesfile = ~/.config/git/global-excludes
 
 [credential]
-	helper = osxkeychain
+  helper = osxkeychain
 
 [filter "lfs"]
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	required = true
-	process = git-lfs filter-process
+  clean = git-lfs clean -- %f
+  smudge = git-lfs smudge -- %f
+  required = true
+  process = git-lfs filter-process
 
 [http]
-	# Without this. Git would often have trouble with stupidly large commits (see Twitter for iOS source code).
-	postBuffer = 524288000
-	sslVerify = true
+  # Without this. Git would often have trouble with stupidly large commits (see Twitter for iOS source code).
+  postBuffer = 524288000
+  sslVerify = true
 
 [pack]
-	# Auto detect right number of threads
-	threads = 0
+  # Auto detect right number of threads
+  threads = 0
 
 [push]
-	# This is now the default...
-	default = simple
+  # This is now the default...
+  default = simple
 
 [receive]
-	denyCurrentBranch = updateInstead
+  denyCurrentBranch = updateInstead
 
 [rebase]
-	autoSquash = true
-	autoStash = true
+  autoSquash = true
+  autoStash = true
 
 [rerere]
-	# Remember and re-apply your git conflict resolutions. This is magic: https://www.kernel.org/pub/software/scm/git/docs/git-rerere.html
-	enabled = true
+  # Remember and re-apply your git conflict resolutions. This is magic: https://www.kernel.org/pub/software/scm/git/docs/git-rerere.html
+  enabled = true
 
 [status]
-	# Painfully verbose (but vitally important) info about submodules.
-	submodulesummary = true
+  # Painfully verbose (but vitally important) info about submodules.
+  submodulesummary = true
 
 [diff]
-	tool = Kaleidoscope
-	compactionHeuristic = true
-	colorMoved = zebra
+  tool = smerge
+  compactionHeuristic = true
+  colorMoved = zebra
 
 [difftool]
-	prompt = false
+  prompt = false
 
 [merge]
-	tool = Kaleidoscope
-	log = true
-
-[merge "mergepbx"]
-	name = Xcode project files merge tool
-	driver = mergepbx %O %A %B
+  tool = smerge
 
 [mergetool]
-	keepBackup = false
-	prompt = false
+  prompt = false
 
-[mergetool "Kaleidoscope"]
-	cmd = ksdiff --merge --output "$MERGED" --base "$BASE" -- "$LOCAL" --snapshot "$REMOTE" --snapshot
-	trustexitcode = true
+[difftool "ksdiff"]
+  name = Kaleidoscope
+  cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+
+[mergetool "ksdiff"]
+  name = Kaleidoscope
+  cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" \"$REMOTE\"
+
+[merge "mergepbx"]
+  name = Xcode project files merge tool
+  driver = /usr/local/bin/mergepbx %O %A %B
 
 [mergetool "mergepbx"]
-	cmd = mergepbx "$BASE" "$LOCAL" "$REMOTE" -o "$MERGED"
+  name = Xcode project files merge tool
+  cmd = /usr/local/bin/mergepbx "$BASE" "$LOCAL" "$REMOTE" -o "$MERGED"
+
+[difftool "smerge"]
+  name = Sublime Merge
+  cmd = smerge mergetool "$BASE" "$LOCAL" "$REMOTE" -o "$MERGED"
+
+[mergetool "smerge"]
+  name = Sublime Merge
+  cmd = smerge mergetool "$BASE" "$LOCAL" "$REMOTE"
 
 [diff "localizablestrings"]
-	textconv = "iconv -f utf-16 -t utf-8"
+  textconv = "iconv -f utf-16 -t utf-8"
 
 [commit]
-	gpgsign = true
-	template = ~/.config/git/commit-message-template
+  gpgsign = true
+  template = ~/.config/git/commit-message-template
 
 [tag]
-	gpgsign = true
+  gpgsign = true
 
 [gpg]
-	program = gpg
+  program = /usr/local/bin/gpg
 
 [pull]
-	rebase = true
+  rebase = true
 
 [include]
-	path = ~/.gitconfig-local
+  path = ~/.gitconfig-local
