@@ -96,11 +96,13 @@
 
 [difftool "smerge"]
   name = Sublime Merge
-  cmd = smerge mergetool "$BASE" "$LOCAL" "$REMOTE" -o "$MERGED"
+  trustExitCode = true
+  cmd = smerge mergetool \"$BASE\" \"$LOCAL\" \"$REMOTE\"
 
 [mergetool "smerge"]
   name = Sublime Merge
-  cmd = smerge mergetool "$BASE" "$LOCAL" "$REMOTE"
+  trustExitCode = true
+  cmd = smerge mergetool \"$BASE\" \"$LOCAL\" \"$REMOTE\" -o \"$MERGED\"
 
 [diff "localizablestrings"]
   textconv = "iconv -f utf-16 -t utf-8"
