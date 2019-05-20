@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AllowedTypes</key>
+	<array>
+		<string>com.apple.dt.playground</string>
+	</array>
+	<key>DefaultCompletionName</key>
+	<string>MyPlayground</string>
+	<key>Description</key>
+	<string>An interactive environment for experimenting with CwlViews</string>
+	<key>Kind</key>
+	<string>Xcode.IDEFoundation.TextSubstitutionPlaygroundTemplateKind</string>
+	<key>MainTemplateFile</key>
+	<string>___FILEBASENAME___.playground</string>
+	<key>Name</key>
+	<string>CwlViews</string>
+	<key>Platforms</key>
+	<array>
+		<string>com.apple.platform.macosx</string>
+	</array>
+	<key>SortOrder</key>
+	<string>20</string>
+	<key>Summary</key>
+	<string>An macOS Playground</string>
+</dict>
+</plist>
