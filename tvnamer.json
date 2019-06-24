@@ -44,7 +44,9 @@
     "filename_without_episode_no_season": "%(seriesname)s.E%(episode)s%(ext)s",
     "force_name": null,
     "input_filename_replacements": [],
-    "input_series_replacements": {},
+    "input_series_replacements": {
+        "Marvels Agents of S H I E L D": "Marvels Agents of SHIELD"
+    },
     "language": "en",
     "lowercase_filename": false,
     "move_files_confirmation": true,

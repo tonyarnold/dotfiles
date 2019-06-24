@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Bucket
+   uuid = "UserGlobalBreakpointBucket"
    type = "2"
    version = "2.0">
    <Breakpoints>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.ExceptionBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            uuid = "EB62CF66-52A6-4D2B-BE2F-C70301783C29"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             scope = "1"
@@ -24,7 +26,8 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.ExceptionBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            uuid = "EA91133C-EAA3-4BBC-ABBE-98D3C0C0F929"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             scope = "1"
@@ -42,6 +45,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.ExceptionBreakpoint">
          <BreakpointContent
+            uuid = "7557F254-CE95-4F16-A22F-D8B4C335EC79"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
@@ -52,6 +56,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.IDETestFailureBreakpoint">
          <BreakpointContent
+            uuid = "105851FC-B6BF-4CBC-A6AF-C9F12BEB545C"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
@@ -61,7 +66,8 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.OpenGLErrorBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            uuid = "DEFCD2F6-560B-4B4E-B804-ED8E08BD0B1C"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             breakpointStackSelectionBehavior = "1"
@@ -81,7 +87,8 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.SymbolicBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            uuid = "C6497BF7-AE0E-41E5-AEBA-AD856F0FB47F"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "Yes"
             symbolName = "NSApplicationMain"
@@ -102,7 +109,8 @@
             </Actions>
             <Locations>
                <Location
-                  shouldBeEnabled = "Yes"
+                  uuid = "C6497BF7-AE0E-41E5-AEBA-AD856F0FB47F - a8f96680031534a4"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "NSApplicationMain"
@@ -111,7 +119,8 @@
                   offsetFromSymbolStart = "0">
                </Location>
                <Location
-                  shouldBeEnabled = "Yes"
+                  uuid = "C6497BF7-AE0E-41E5-AEBA-AD856F0FB47F - 660949c2b201dcc9"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "AppKit.NSApplicationMain(Swift.Int32, Swift.UnsafeMutablePointer&lt;Swift.Optional&lt;Swift.UnsafeMutablePointer&lt;Swift.Int8&gt;&gt;&gt;) -&gt; Swift.Int32"
@@ -125,6 +134,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.SymbolicBreakpoint">
          <BreakpointContent
+            uuid = "15F832B7-1B81-427C-82FD-3DAA4D593C79"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
@@ -141,6 +151,7 @@
             </Actions>
             <Locations>
                <Location
+                  uuid = "15F832B7-1B81-427C-82FD-3DAA4D593C79 - 304aa20cc9942e4b"
                   shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -155,14 +166,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.SymbolicBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            uuid = "7DFD4B98-2377-4B6B-A1ED-25382EF3D97B"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             symbolName = "NSKVODeallocateBreak"
             moduleName = "">
             <Locations>
                <Location
-                  shouldBeEnabled = "Yes"
+                  uuid = "7DFD4B98-2377-4B6B-A1ED-25382EF3D97B - 52ae26cba8f8e259"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "NSKVODeallocateBreak"
@@ -176,7 +189,8 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.SymbolicBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            uuid = "0B63FD67-5095-4577-A03B-8AA893E7BFBF"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             symbolName = "CGPostError"
@@ -192,7 +206,8 @@
             </Actions>
             <Locations>
                <Location
-                  shouldBeEnabled = "Yes"
+                  uuid = "0B63FD67-5095-4577-A03B-8AA893E7BFBF - 6b2a6ff60c6dfa83"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "CGPostError"
@@ -206,14 +221,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.SymbolicBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            uuid = "2CAA2B1F-C264-42B9-A04B-EC81E7042E86"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             symbolName = "_NSDataReinitializationBreak"
             moduleName = "">
             <Locations>
                <Location
-                  shouldBeEnabled = "Yes"
+                  uuid = "2CAA2B1F-C264-42B9-A04B-EC81E7042E86 - 7f67292beb66e73b"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "_NSDataReinitializationBreak"
@@ -227,7 +244,8 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.SwiftErrorBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            uuid = "82227BBB-9B5F-41F3-8B70-164B5A4A2941"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No">
          </BreakpointContent>
@@ -235,7 +253,8 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.SymbolicBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            uuid = "79247129-F693-4561-B7DD-479132B2B8DA"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "Yes"
             symbolName = "UIApplicationMain"
@@ -249,13 +268,34 @@
                </BreakpointActionProxy>
             </Actions>
             <Locations>
+               <Location
+                  uuid = "79247129-F693-4561-B7DD-479132B2B8DA - ca8a62ba89de0751"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "UIKit.UIApplicationMain(Swift.Int32, Swift.Optional&lt;Swift.UnsafeMutablePointer&lt;Swift.UnsafeMutablePointer&lt;Swift.Int8&gt;&gt;&gt;, Swift.Optional&lt;Swift.String&gt;, Swift.Optional&lt;Swift.String&gt;) -&gt; Swift.Int32"
+                  moduleName = "libswiftUIKit.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "79247129-F693-4561-B7DD-479132B2B8DA - dc2f8c5e001177f0"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "UIApplicationMain"
+                  moduleName = "UIKitCore"
+                  usesParentBreakpointCondition = "Yes"
+                  offsetFromSymbolStart = "0">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.SymbolicBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            uuid = "A1D3D290-51AF-451C-8EEA-2F0515063AB3"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             symbolName = "DETECTED_MISSING_CONSTRAINTS"
@@ -267,6 +307,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.SymbolicBreakpoint">
          <BreakpointContent
+            uuid = "352058E6-E974-481B-8326-EADD4D0C7504"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
@@ -274,6 +315,7 @@
             moduleName = "">
             <Locations>
                <Location
+                  uuid = "352058E6-E974-481B-8326-EADD4D0C7504 - e01c8be6878e1e41"
                   shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -288,6 +330,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.SymbolicBreakpoint">
          <BreakpointContent
+            uuid = "46DF7FE8-D1A3-4653-ABE6-BDF6B11BC0F8"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
@@ -295,6 +338,7 @@
             moduleName = "">
             <Locations>
                <Location
+                  uuid = "46DF7FE8-D1A3-4653-ABE6-BDF6B11BC0F8 - ca5a5abeb0dbd6ce"
                   shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"

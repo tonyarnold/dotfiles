@@ -1,7 +1,6 @@
 - clean:
     - '~'
     - ~/.config
-    - ~/.config/fish
 
 - defaults:
     link:
@@ -9,11 +8,7 @@
         relink: true
 
 - link:
-    ~/.config/fish/conf.d: config/fish/conf.d
-    ~/.config/fish/config.fish: config/fish/config.fish
-    ~/.config/fish/functions: config/fish/functions
     ~/.config/git: config/git
-    ~/.config/omf: config/omf
     ~/.gitconfig: gitconfig
     ~/.ssh/config: ssh/config
     ~/.gnupg/gpg-agent.conf: gnupg/gpg-agent.conf
@@ -23,6 +18,8 @@
     ~/.tvnamer.json: tvnamer.json
     ~/.vim: vim
     ~/.vimrc: vimrc
+    ~/.oh-my-zsh: oh-my-zsh
+    ~/.zshrc: zshrc
     ~/Library/Developer/Xcode/Plug-ins: Xcode/Plug-ins
     ~/Library/Developer/Xcode/Specifications: Xcode/Specifications
     ~/Library/Developer/Xcode/Templates: Xcode/Templates
@@ -35,5 +32,7 @@
 - shell:
     - chmod 0700 ~/.gnupg
     - chmod 0700 ~/.ssh
-    - [git submodule update --init --recursive, Installing submodules]
+    - chmod 0600 ~/.ssh/*
     - ["curl -LSso vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim", Update pathogen.vim]
+    - ["/usr/bin/ruby -e \"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)\"", Install Brew]
+    - ["brew bundle", Install Brew Packages]
