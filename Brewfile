@@ -1,5 +1,5 @@
-cask_args appdir: "~/Applications"
 tap "homebrew/cask"
+tap "homebrew/cask-fonts"
 tap "mxcl/made"
 tap "nshipster/formulae"
 
@@ -17,6 +17,14 @@ brew "shellcheck"
 brew "swiftformat"
 brew "swift-format"
 brew "vim"
+
+cask "font-fira-code"
+cask "font-ia-writer-duo"
+cask "font-ia-writer-duospace"
+cask "font-ia-writer-mono"
+cask "font-ia-writer-quattro"
+cask "font-ibm-plex"
+cask "font-inter"
 
 cask "aerial"
 cask "backblaze"
