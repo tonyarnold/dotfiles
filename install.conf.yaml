@@ -15,7 +15,7 @@
     ~/.gnupg/gpg.conf: gnupg/gpg.conf
     ~/.tmux.conf: tmux.conf
     ~/.tmux: tmux
-    ~/.tvnamer.json: tvnamer.json
+    ~/.mnamer-v2.json: mnamer-v2.json
     ~/.vim: vim
     ~/.vimrc: vimrc
     ~/.zshrc: zshrc
