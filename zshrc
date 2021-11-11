@@ -68,7 +68,7 @@ HIST_STAMPS="dd/mm/yyyy"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(asdf brew bundler docker git github gpg-agent node npm osx pip ssh-agent sublime terminalapp)
+plugins=(asdf brew bundler docker dotenv git github gpg-agent node npm macos pip ssh-agent sublime terminalapp zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -97,3 +97,13 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# Hook direnv into your shell.
+eval "$(asdf exec direnv hook bash)"
+
+# A shortcut for asdf managed direnv.
+direnv() { asdf exec direnv "$@"; }
+
+eval "$(starship init zsh)"
+
+. $(brew --prefix asdf)/asdf.sh
