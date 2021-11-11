@@ -16,29 +16,17 @@
 
 [core]
   fsyncobjectfiles = true
-  pager = less
+  pager = cat
   quotepath = false
   trustctime = false
   precomposeunicode = false
-
-  # Xcode Project merging
   attributesfile = ~/.config/git/attributes
-
-  # You'll want this.
   excludesfile = ~/.config/git/global-excludes
 
 [credential]
   helper = osxkeychain
 
-[filter "lfs"]
-  clean = git-lfs clean -- %f
-  smudge = git-lfs smudge -- %f
-  required = true
-  process = git-lfs filter-process
-
 [http]
-  # Without this. Git would often have trouble with stupidly large commits (see Twitter for iOS source code).
-  postBuffer = 524288000
   sslVerify = true
 
 [pack]
@@ -65,7 +53,7 @@
   submodulesummary = true
 
 [diff]
-  tool = smerge
+  tool = ksdiff
   compactionHeuristic = true
   colorMoved = zebra
 
@@ -73,7 +61,7 @@
   prompt = false
 
 [merge]
-  tool = smerge
+  tool = ksdiff
 
 [mergetool]
   prompt = false
@@ -94,22 +82,12 @@
   name = Xcode project files merge tool
   cmd = /usr/local/bin/mergepbx "$BASE" "$LOCAL" "$REMOTE" -o "$MERGED"
 
-[difftool "smerge"]
-  name = Sublime Merge
-  trustExitCode = true
-  cmd = smerge mergetool \"$BASE\" \"$LOCAL\" \"$REMOTE\"
-
-[mergetool "smerge"]
-  name = Sublime Merge
-  trustExitCode = true
-  cmd = smerge mergetool \"$BASE\" \"$LOCAL\" \"$REMOTE\" -o \"$MERGED\"
 
 [diff "localizablestrings"]
-  textconv = "iconv -f utf-16 -t utf-8"
+  textconv = "iconv -t utf-8"
 
 [commit]
   gpgsign = true
-  template = ~/.config/git/commit-message-template
 
 [tag]
   gpgsign = true
@@ -122,3 +100,9 @@
 
 [include]
   path = ~/.gitconfig-local
+
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
