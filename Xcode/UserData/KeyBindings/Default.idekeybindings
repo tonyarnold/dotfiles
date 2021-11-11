@@ -24,7 +24,7 @@
 				<key>Parent Title</key>
 				<string>SwiftFormat</string>
 				<key>Title</key>
-				<string>Format Entire File</string>
+				<string>Format File</string>
 			</dict>
 			<dict>
 				<key>Action</key>
@@ -32,7 +32,7 @@
 				<key>Alternate</key>
 				<string>NO</string>
 				<key>CommandID</key>
-				<string>IDESourceEditorExtension:com.charcoaldesign.SwiftFormat-for-Xcode.SourceEditorExtension,IDESourceEditorExtensionCommand:com.charcoaldesign.SwiftFormat-for-Xcode.SourceEditorExtension.FormatSelectedSourceCommand</string>
+				<string>IDESourceEditorExtension:com.charcoaldesign.SwiftFormat-for-Xcode.SourceEditorExtension,IDESourceEditorExtensionCommand:com.charcoaldesign.SwiftFormat-for-Xcode.SourceEditorExtension.FormatSelectionCommand</string>
 				<key>Group</key>
 				<string>Editor Menu for Source Code</string>
 				<key>GroupID</key>
@@ -46,7 +46,7 @@
 				<key>Parent Title</key>
 				<string>SwiftFormat</string>
 				<key>Title</key>
-				<string>Format Selected Source</string>
+				<string>Format Selection</string>
 			</dict>
 			<dict>
 				<key>Action</key>
@@ -54,7 +54,47 @@
 				<key>Alternate</key>
 				<string>NO</string>
 				<key>CommandID</key>
-				<string>IDESourceEditorExtension:com.mapbox.XcodeClangFormat.clang-format,IDESourceEditorExtensionCommand:com.mapbox.XcodeClangFormat.clang-format.ClangFormatCommand</string>
+				<string>IDESourceEditorExtension:com.charcoaldesign.SwiftFormat-for-Xcode.SourceEditorExtension,IDESourceEditorExtensionCommand:com.charcoaldesign.SwiftFormat-for-Xcode.SourceEditorExtension.LintFileCommand</string>
+				<key>Group</key>
+				<string>Editor Menu for Source Code</string>
+				<key>GroupID</key>
+				<string>Xcode.IDEPegasusSourceEditor.MenuDefinition.Editor</string>
+				<key>GroupedAlternate</key>
+				<string>NO</string>
+				<key>Navigation</key>
+				<string>NO</string>
+				<key>Parent Title</key>
+				<string>SwiftFormat</string>
+				<key>Title</key>
+				<string>Lint File</string>
+			</dict>
+			<dict>
+				<key>Action</key>
+				<string>_invokeSourceEditorExtensionCommand:</string>
+				<key>Alternate</key>
+				<string>NO</string>
+				<key>CommandID</key>
+				<string>IDESourceEditorExtension:com.ruiaureliano.xswiftformat.extension,IDESourceEditorExtensionCommand:com.ruiaureliano.xswiftformat.extension.SourceEditorCommand</string>
+				<key>Group</key>
+				<string>Editor Menu for Source Code</string>
+				<key>GroupID</key>
+				<string>Xcode.IDEPegasusSourceEditor.MenuDefinition.Editor</string>
+				<key>GroupedAlternate</key>
+				<string>NO</string>
+				<key>Navigation</key>
+				<string>NO</string>
+				<key>Parent Title</key>
+				<string>X-SwiftFormat</string>
+				<key>Title</key>
+				<string>Format Swift Code</string>
+			</dict>
+			<dict>
+				<key>Action</key>
+				<string>_invokeSourceEditorExtensionCommand:</string>
+				<key>Alternate</key>
+				<string>NO</string>
+				<key>CommandID</key>
+				<string>IDESourceEditorExtension:com.thecocoabots.ClangFormat.XcodeSourceEditorExtension,IDESourceEditorExtensionCommand:com.thecocoabots.ClangFormat.XcodeSourceEditorExtension.ClangFormatCommand</string>
 				<key>Group</key>
 				<string>Editor Menu for Source Code</string>
 				<key>GroupID</key>
@@ -76,7 +116,7 @@
 				<key>Alternate</key>
 				<string>NO</string>
 				<key>CommandID</key>
-				<string>IDESourceEditorExtension:com.stevebarnegren.xcodecommentwrapperext,IDESourceEditorExtensionCommand:commentwrapper.rewrap-40</string>
+				<string>IDESourceEditorExtension:com.thecocoabots.SwiftFormatter.XcodeSourceEditorExtension,IDESourceEditorExtensionCommand:com.thecocoabots.SwiftFormatter.XcodeSourceEditorExtension.FormatEntireFileCommand</string>
 				<key>Group</key>
 				<string>Editor Menu for Source Code</string>
 				<key>GroupID</key>
@@ -86,9 +126,9 @@
 				<key>Navigation</key>
 				<string>NO</string>
 				<key>Parent Title</key>
-				<string>Comment Wrapper</string>
+				<string>SwiftFormatter</string>
 				<key>Title</key>
-				<string>Re-wrap (40)</string>
+				<string>Format Entire File</string>
 			</dict>
 			<dict>
 				<key>Action</key>
@@ -96,7 +136,7 @@
 				<key>Alternate</key>
 				<string>NO</string>
 				<key>CommandID</key>
-				<string>IDESourceEditorExtension:com.stevebarnegren.xcodecommentwrapperext,IDESourceEditorExtensionCommand:commentwrapper.rewrap-60</string>
+				<string>IDESourceEditorExtension:com.thecocoabots.SwiftFormatter.XcodeSourceEditorExtension,IDESourceEditorExtensionCommand:com.thecocoabots.SwiftFormatter.XcodeSourceEditorExtension.FormatSelectedSourceCommand</string>
 				<key>Group</key>
 				<string>Editor Menu for Source Code</string>
 				<key>GroupID</key>
@@ -106,109 +146,9 @@
 				<key>Navigation</key>
 				<string>NO</string>
 				<key>Parent Title</key>
-				<string>Comment Wrapper</string>
+				<string>SwiftFormatter</string>
 				<key>Title</key>
-				<string>Re-wrap (60)</string>
-			</dict>
-			<dict>
-				<key>Action</key>
-				<string>_invokeSourceEditorExtensionCommand:</string>
-				<key>Alternate</key>
-				<string>NO</string>
-				<key>CommandID</key>
-				<string>IDESourceEditorExtension:com.stevebarnegren.xcodecommentwrapperext,IDESourceEditorExtensionCommand:commentwrapper.rewrap-80</string>
-				<key>Group</key>
-				<string>Editor Menu for Source Code</string>
-				<key>GroupID</key>
-				<string>Xcode.IDEPegasusSourceEditor.MenuDefinition.Editor</string>
-				<key>GroupedAlternate</key>
-				<string>NO</string>
-				<key>Navigation</key>
-				<string>NO</string>
-				<key>Parent Title</key>
-				<string>Comment Wrapper</string>
-				<key>Title</key>
-				<string>Re-wrap (80)</string>
-			</dict>
-			<dict>
-				<key>Action</key>
-				<string>_invokeSourceEditorExtensionCommand:</string>
-				<key>Alternate</key>
-				<string>NO</string>
-				<key>CommandID</key>
-				<string>IDESourceEditorExtension:com.stevebarnegren.xcodecommentwrapperext,IDESourceEditorExtensionCommand:commentwrapper.unwrap</string>
-				<key>Group</key>
-				<string>Editor Menu for Source Code</string>
-				<key>GroupID</key>
-				<string>Xcode.IDEPegasusSourceEditor.MenuDefinition.Editor</string>
-				<key>GroupedAlternate</key>
-				<string>NO</string>
-				<key>Navigation</key>
-				<string>NO</string>
-				<key>Parent Title</key>
-				<string>Comment Wrapper</string>
-				<key>Title</key>
-				<string>Unwrap</string>
-			</dict>
-			<dict>
-				<key>Action</key>
-				<string>_invokeSourceEditorExtensionCommand:</string>
-				<key>Alternate</key>
-				<string>NO</string>
-				<key>CommandID</key>
-				<string>IDESourceEditorExtension:com.stevebarnegren.xcodecommentwrapperext,IDESourceEditorExtensionCommand:commentwrapper.wrap-40</string>
-				<key>Group</key>
-				<string>Editor Menu for Source Code</string>
-				<key>GroupID</key>
-				<string>Xcode.IDEPegasusSourceEditor.MenuDefinition.Editor</string>
-				<key>GroupedAlternate</key>
-				<string>NO</string>
-				<key>Navigation</key>
-				<string>NO</string>
-				<key>Parent Title</key>
-				<string>Comment Wrapper</string>
-				<key>Title</key>
-				<string>Wrap (40)</string>
-			</dict>
-			<dict>
-				<key>Action</key>
-				<string>_invokeSourceEditorExtensionCommand:</string>
-				<key>Alternate</key>
-				<string>NO</string>
-				<key>CommandID</key>
-				<string>IDESourceEditorExtension:com.stevebarnegren.xcodecommentwrapperext,IDESourceEditorExtensionCommand:commentwrapper.wrap-60</string>
-				<key>Group</key>
-				<string>Editor Menu for Source Code</string>
-				<key>GroupID</key>
-				<string>Xcode.IDEPegasusSourceEditor.MenuDefinition.Editor</string>
-				<key>GroupedAlternate</key>
-				<string>NO</string>
-				<key>Navigation</key>
-				<string>NO</string>
-				<key>Parent Title</key>
-				<string>Comment Wrapper</string>
-				<key>Title</key>
-				<string>Wrap (60)</string>
-			</dict>
-			<dict>
-				<key>Action</key>
-				<string>_invokeSourceEditorExtensionCommand:</string>
-				<key>Alternate</key>
-				<string>NO</string>
-				<key>CommandID</key>
-				<string>IDESourceEditorExtension:com.stevebarnegren.xcodecommentwrapperext,IDESourceEditorExtensionCommand:commentwrapper.wrap-80</string>
-				<key>Group</key>
-				<string>Editor Menu for Source Code</string>
-				<key>GroupID</key>
-				<string>Xcode.IDEPegasusSourceEditor.MenuDefinition.Editor</string>
-				<key>GroupedAlternate</key>
-				<string>NO</string>
-				<key>Navigation</key>
-				<string>NO</string>
-				<key>Parent Title</key>
-				<string>Comment Wrapper</string>
-				<key>Title</key>
-				<string>Wrap (80)</string>
+				<string>Format Selected Source</string>
 			</dict>
 			<dict>
 				<key>Action</key>
