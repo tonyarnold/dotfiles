@@ -19,7 +19,6 @@
     ~/.vim: vim
     ~/.vimrc: vimrc
     ~/.zshrc: zshrc
-    ~/Library/Developer/Xcode/Plug-ins: Xcode/Plug-ins
     ~/Library/Developer/Xcode/Specifications: Xcode/Specifications
     ~/Library/Developer/Xcode/Templates: Xcode/Templates
     ~/Library/Developer/Xcode/UserData/CodeSnippets: Xcode/UserData/CodeSnippets
