@@ -34,4 +34,4 @@
     - ["sh -c \"$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)\"", Install Oh My Zsh]
     - ["curl -LSso vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim", Update pathogen.vim]
     - ["/usr/bin/ruby -e \"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)\"", Install Brew]
-    - ["brew bundle", Install Brew Packages]
+    - ["brew bundle --verbose", Install Brew Packages]
