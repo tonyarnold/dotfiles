@@ -3,6 +3,7 @@ tap "homebrew/cask-fonts"
 
 brew "asdf"
 brew "carthage"
+brew "espanso"
 brew "git"
 brew "git-lfs"
 brew "gnupg"

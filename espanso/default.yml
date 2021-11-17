@@ -1,0 +1,93 @@
+# espanso configuration file
+
+# This is the default configuration file, change it as you like it
+# You can refer to the official documentation:
+# https://espanso.org/docs/
+
+show_icon: false
+
+# Matches are the substitution rules, when you type the "trigger" string
+# it gets replaced by the "replace" string.
+matches:
+  # Dates
+  - trigger: ":sts"
+    replace: "{{shortdate}}"
+    vars:
+      - name: shortdate
+        type: date
+        params:
+          format: "%Y%m%d"
+
+  - trigger: ":dday"
+    replace: "{{mydate}}"
+    vars:
+      - name: mydate
+        type: date
+        params:
+          format: "%d %B, %Y"
+
+  - trigger: ":tstamp"
+    replace: "{{mydate}}"
+    vars:
+      - name: mydate
+        type: date
+        params:
+          format: "%Y-%m-%d %H:%M:%S"
+
+  - trigger: ":thx"
+    replace: |
+      thanks,
+
+
+      Tony
+
+  - trigger: ":??"
+    replace: "Please let me know if you have any questions."
+
+
+  - trigger: ":todo"
+    replace: "// (tonyarnold/{{shortdate}}) TODO: [{{form1.category}}] "
+    vars:
+      - name: shortdate
+        type: date
+        params:
+          format: "%Y%m%d"
+      - name: form1
+        type: form
+        params:
+          layout: "Category: {{category}}"
+          fields:
+            category:
+              type: list
+              default: Implementation
+              values:
+                - Broken
+                - Implementation
+                - Unimplemented
+                - Localization
+
+  # Arrows
+  - trigger: ":--"
+    replace: "—"
+  - trigger: ":mdash"
+    replace: "—"
+  - trigger: ":emdash"
+    replace: "—"
+  - trigger: ":ndash"
+    replace: "–"
+  - trigger: ":endash"
+    replace: "–"
+  - trigger: ":check"
+    replace: "✓"
+  - trigger: "::sect"
+    replace: "§"
+  - trigger: ":rarrow"
+    replace: "→"
+  - trigger: ":larrow"
+    replace: "←"
+  - trigger: ":uarrow"
+    replace: "↑"
+  - trigger: ":darrow"
+    replace: "↓"
+  - trigger: ":lrarrow"
+    replace: "⟷"

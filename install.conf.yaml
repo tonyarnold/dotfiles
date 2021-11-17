@@ -26,6 +26,7 @@
     ~/Library/Developer/Xcode/UserData/IDETemplateMacros.plist: Xcode/UserData/IDETemplateMacros.plist
     ~/Library/Developer/Xcode/UserData/KeyBindings: Xcode/UserData/KeyBindings
     ~/Library/Developer/Xcode/UserData/xcdebugger: Xcode/UserData/xcdebugger
+    ~/Library/Preferences/espanso: espanso
 
 - shell:
     - chmod 0700 ~/.gnupg
