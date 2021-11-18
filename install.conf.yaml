@@ -32,7 +32,7 @@
     - chmod 0700 ~/.gnupg
     - chmod 0700 ~/.ssh
     - chmod 0600 ~/.ssh/*
-    - ["sh -c \"$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)\"", Install Oh My Zsh]
+    - ["sh -c \"$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)\"", Install Oh My Zsh]
     - ["curl -LSso vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim", Update pathogen.vim]
-    - ["/usr/bin/ruby -e \"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)\"", Install Brew]
+    - ["/bin/bash -c \"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)\"", Install Brew]
     - ["brew bundle --verbose", Install Brew Packages]
